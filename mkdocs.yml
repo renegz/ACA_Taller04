@@ -1,12 +1,12 @@
-site_name: My Docs
-site_description: Documentation for my project
+site_name: BananaBook DOCS
+site_description: Documentacion tecnica para la aplicacion web BananaBook
 site_author: Rene Guzman
 
 theme:
   name: material
   palette:
     scheme: slate
-    primary: deep purple
+    primary: yellow
     accent: lime
   features:
     - navigation.tabs
@@ -21,11 +21,14 @@ theme:
     - navigation.search.suggestions
   language: es
   
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
 nav:
-  - Home: index.md
-  - About: about.md
-  - Contact: contact.md
-  - Features:
-      - Feature 1: features/feature1.md
-      - Feature 2: features/feature2.md
-      - Feature 3: features/feature3.md
+  - Inicio: index.md
+  - Primeros Pasos: getting-started.md
+  - API: api.md
